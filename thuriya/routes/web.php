@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/hello',function(){
+    return 'hi there';
+});
 Route::get('/', function () {
     return view('main');
 })->name('main')->middleware('thuriyaMiddle');
